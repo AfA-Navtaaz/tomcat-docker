@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 
-ADD cp -a **/*.war /usr/local/tomcat/webapps/
+ADD cp -a ../*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
