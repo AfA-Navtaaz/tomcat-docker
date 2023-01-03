@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 
-COPY **/*.war /usr/local/tomcat/webapps/
+COPY C:/ProgramData/Jenkins/.jenkins/workspace/Tomcat-docker/target/dependency/webrunner-app.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
