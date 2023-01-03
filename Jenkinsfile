@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                bat 'mvn -f /pom.xml clean package'
+                if (isUnix()) --> sh "mvn -f ./pom.xml clean package"
+                else --> bat "mvn -f ./pom.xml clean package"
             }
             post {
                 success {
