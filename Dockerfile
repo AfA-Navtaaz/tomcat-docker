@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 
-RUN cp -a ./target/dependency /usr/local/tomcat/webapps/
+COPY **/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
