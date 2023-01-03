@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 
-COPY ./target/dependency/webapp-runner.war /usr/local/tomcat/webapps/
+ADD **/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
