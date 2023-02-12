@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:9.0
 
 ADD ${WORKSPACE}/${JOB_NAME}/target/*.war /usr/local/tomcat/webapps/
 
